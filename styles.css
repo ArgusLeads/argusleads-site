@@ -445,6 +445,122 @@ button { font-family: var(--font-body); cursor: pointer; }
   50%       { transform: translateY(6px); }
 }
 
+/* ── HERO TWO-COLUMN LAYOUT ─────────────────────────────────────────────── */
+.hero-columns {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: var(--container);
+  width: 100%;
+}
+
+.hero-col-figure {
+  flex: 0 0 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-col-figure svg {
+  width: 100%;
+  height: auto;
+  max-width: 380px;
+  overflow: visible;
+}
+
+.hero-col-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-col-text .hero-sub {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-col-text .hero-ctas {
+  justify-content: flex-start;
+}
+
+.hero-col-text .hero-trust {
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .hero-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-col-figure {
+    flex: none;
+    width: 75%;
+    max-width: 300px;
+  }
+  .hero-col-text {
+    text-align: center;
+  }
+  .hero-col-text .hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-col-text .hero-ctas {
+    justify-content: center;
+  }
+  .hero-col-text .hero-trust {
+    justify-content: center;
+  }
+}
+
+/* ── FISHERMAN ANIMATIONS ────────────────────────────────────────────────── */
+@keyframes net-cast {
+  0%, 100% { transform: scale(0.3); opacity: 0.4; }
+  40%, 60%  { transform: scale(1.0); opacity: 1.0; }
+}
+
+@keyframes card-drift {
+  0%, 100% { transform: translate(0, 0);         opacity: 0.5; }
+  50%      { transform: translate(30px, -20px);  opacity: 0.9; }
+}
+
+@keyframes node-pulse {
+  0%   { opacity: 0.4; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes circuit-flow {
+  0%   { stroke-dashoffset: 60; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes eye-glow {
+  0%   { opacity: 0.4; }
+  100% { opacity: 1.0; }
+}
+
+.net-group {
+  transform-origin: 238px 54px;
+  animation: net-cast 4s ease-in-out infinite;
+}
+
+.net-node {
+  animation: node-pulse 2s ease-in-out infinite alternate;
+}
+
+.circuit-line {
+  stroke-dasharray: 30 10;
+  animation: circuit-flow 3s linear infinite;
+}
+
+.eye-slit {
+  animation: eye-glow 2s ease-in-out infinite alternate;
+}
+
+.data-card-g {
+  animation: card-drift 4s ease-in-out infinite;
+}
+
 /* ── THE PROBLEM ───────────────────────────────────────────────────────────── */
 .section-problem { background: #0D1117; }
 

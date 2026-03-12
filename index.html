@@ -69,30 +69,176 @@
 <!-- ── HERO ───────────────────────────────────────────────────────────────── -->
 <section id="hero" class="hero">
   <div class="hero-glow"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">AI Agent Deployment</p>
-    <h1 class="hero-headline">
-      <span class="hero-line">Every Lead.</span>
-      <span class="hero-line">Every Industry.</span>
-      <span class="hero-line hero-line-gold">Zero Slip Through.</span>
-    </h1>
-    <p class="hero-sub">
-      Argus builds and deploys AI agents that capture, qualify, and hand off prospects automatically, configured entirely to your business, your market, and your rules. Any industry. Any language. No limits.
-    </p>
-    <div class="hero-ctas">
-      <a href="#contact" class="btn btn-gold">Deploy Your Agents</a>
-      <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
-    </div>
-    <div class="hero-trust">
-      <span>Deployed &amp; Active</span>
-      <span class="trust-sep" aria-hidden="true">|</span>
-      <span>Any Industry</span>
-      <span class="trust-sep" aria-hidden="true">|</span>
-      <span>Any Language</span>
-      <span class="trust-sep" aria-hidden="true">|</span>
-      <span>Fully Custom</span>
-    </div>
-  </div>
+  <div class="hero-columns">
+
+    <!-- ── Left column: animated fisherman figure ── -->
+    <div class="hero-col-figure">
+      <svg viewBox="0 0 320 410" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+        <!-- Ambient figure glow -->
+        <ellipse cx="118" cy="220" rx="72" ry="125" fill="rgba(11,37,69,0.22)"/>
+
+        <!-- ── LEFT ARM (behind torso) ── -->
+        <polygon points="88,115 96,108 68,152 60,158" fill="#0B2545" stroke="#C9A84C" stroke-width="1"/>
+        <circle cx="64" cy="155" r="5" fill="#0D1B2E" stroke="#C9A84C" stroke-width="1"/>
+        <polygon points="60,152 68,158 52,188 44,182" fill="#0B2545" stroke="#C9A84C" stroke-width="1"/>
+
+        <!-- ── LEFT LEG ── -->
+        <polygon points="88,192 102,192 90,268 76,268" fill="#0B2545" stroke="#C9A84C" stroke-width="1"/>
+        <circle cx="83" cy="268" r="7" fill="#0D1B2E" stroke="#C9A84C" stroke-width="1"/>
+        <polygon points="76,268 90,268 86,344 72,344" fill="#0B2545" stroke="#C9A84C" stroke-width="1"/>
+        <polygon points="72,342 86,342 84,362 54,362" fill="#0D1B2E" stroke="#C9A84C" stroke-width="1"/>
+
+        <!-- ── RIGHT LEG ── -->
+        <polygon points="138,192 152,192 162,268 148,268" fill="#0B2545" stroke="#C9A84C" stroke-width="1"/>
+        <circle cx="155" cy="268" r="7" fill="#0D1B2E" stroke="#C9A84C" stroke-width="1"/>
+        <polygon points="148,268 162,268 166,344 152,344" fill="#0B2545" stroke="#C9A84C" stroke-width="1"/>
+        <polygon points="148,342 166,342 174,362 146,362" fill="#0D1B2E" stroke="#C9A84C" stroke-width="1"/>
+
+        <!-- Hip connector -->
+        <polygon points="81,172 155,172 148,192 88,192" fill="#0D1B2E" stroke="#C9A84C" stroke-width="0.8"/>
+
+        <!-- ── TORSO ── -->
+        <polygon points="96,104 140,104 155,172 81,172" fill="#0B2545" stroke="#C9A84C" stroke-width="1"/>
+        <!-- Circuit lines -->
+        <path class="circuit-line" d="M 96 130 L 140 130" stroke="#C9A84C" stroke-width="0.8" fill="none"/>
+        <path class="circuit-line" d="M 118 104 L 118 172" stroke="#C9A84C" stroke-width="0.8" fill="none" style="animation-delay:0.6s"/>
+        <path class="circuit-line" d="M 98 148 L 118 145 L 132 152 L 148 152" stroke="#C9A84C" stroke-width="0.8" fill="none" style="animation-delay:1.2s"/>
+        <circle cx="118" cy="130" r="2" fill="#C9A84C" opacity="0.8"/>
+        <circle cx="118" cy="145" r="2" fill="#C9A84C" opacity="0.8"/>
+
+        <!-- ── LEFT SHOULDER PLATE ── -->
+        <polygon points="96,108 64,92 72,126 88,120" fill="#0D1B2E" stroke="#C9A84C" stroke-width="1"/>
+
+        <!-- ── RIGHT SHOULDER PLATE ── -->
+        <polygon points="140,108 172,92 164,126 148,120" fill="#0D1B2E" stroke="#C9A84C" stroke-width="1"/>
+
+        <!-- ── RIGHT ARM (casting, extended upper-right) ── -->
+        <polygon points="146,118 158,112 198,78 186,84" fill="#0B2545" stroke="#C9A84C" stroke-width="1"/>
+        <circle cx="192" cy="81" r="6" fill="#0D1B2E" stroke="#C9A84C" stroke-width="1"/>
+        <polygon points="186,78 198,76 236,52 224,54" fill="#0B2545" stroke="#C9A84C" stroke-width="1"/>
+        <!-- Hand -->
+        <polygon points="224,48 236,46 242,60 230,62" fill="#0B2545" stroke="#C9A84C" stroke-width="1"/>
+
+        <!-- ── NECK ── -->
+        <rect x="111" y="92" width="14" height="12" fill="#0B2545" stroke="#C9A84C" stroke-width="0.5"/>
+
+        <!-- ── HELMET ── -->
+        <polygon points="118,32 144,47 144,77 118,92 92,77 92,47" fill="#0B2545" stroke="#C9A84C" stroke-width="1.5"/>
+        <!-- Visor dark band -->
+        <rect x="91" y="57" width="54" height="13" fill="#060C16" opacity="0.9"/>
+        <!-- Eye slits -->
+        <rect class="eye-slit" x="97" y="60" width="14" height="5" rx="1" fill="#3B82F6"/>
+        <rect class="eye-slit" x="115" y="58" width="14" height="5" rx="1" fill="#3B82F6" style="animation-delay:0.2s"/>
+        <!-- Helmet top trim -->
+        <line x1="106" y1="33" x2="130" y2="33" stroke="#C9A84C" stroke-width="0.5" opacity="0.5"/>
+
+        <!-- ── CASTING NET GROUP ── -->
+        <g class="net-group">
+          <!-- Radial lines from hand (238,54) -->
+          <g stroke="#C9A84C" stroke-width="0.5" opacity="0.7">
+            <line x1="238" y1="54" x2="270" y2="16"/>
+            <line x1="238" y1="54" x2="279" y2="25"/>
+            <line x1="238" y1="54" x2="285" y2="37"/>
+            <line x1="238" y1="54" x2="288" y2="50"/>
+            <line x1="238" y1="54" x2="287" y2="63"/>
+            <line x1="238" y1="54" x2="283" y2="75"/>
+            <line x1="238" y1="54" x2="276" y2="86"/>
+            <line x1="238" y1="54" x2="267" y2="95"/>
+          </g>
+          <!-- Inner arc (r≈20) -->
+          <polyline points="251,39 254,43 257,47 258,52 258,58 256,63 253,67 250,70"
+            stroke="#C9A84C" stroke-width="0.5" fill="none" opacity="0.7"/>
+          <!-- Outer arc (r≈38) -->
+          <polyline points="263,25 269,32 274,41 276,51 275,61 273,70 267,79 260,85"
+            stroke="#C9A84C" stroke-width="0.5" fill="none" opacity="0.7"/>
+          <!-- Net nodes — inner arc -->
+          <g class="net-node" fill="#C9A84C">
+            <circle cx="251" cy="39" r="2"/>
+            <circle cx="257" cy="47" r="2"/>
+            <circle cx="258" cy="58" r="2"/>
+            <circle cx="253" cy="67" r="2"/>
+            <circle cx="250" cy="70" r="2"/>
+          </g>
+          <!-- Net nodes — outer arc -->
+          <g class="net-node" fill="#C9A84C" style="animation-delay:0.3s">
+            <circle cx="263" cy="25" r="2"/>
+            <circle cx="274" cy="41" r="2"/>
+            <circle cx="276" cy="51" r="2"/>
+            <circle cx="275" cy="61" r="2"/>
+            <circle cx="267" cy="79" r="2"/>
+          </g>
+        </g>
+
+        <!-- ── FLOATING DATA CARDS ── -->
+        <!-- Card 1: Leads -->
+        <g class="data-card-g" transform="translate(22,85)" style="animation-delay:0s">
+          <rect width="48" height="32" rx="3" fill="rgba(11,37,69,0.92)" stroke="#C9A84C" stroke-width="1"/>
+          <svg x="4" y="8" width="14" height="14" viewBox="0 0 16 16" fill="none">
+            <circle cx="8" cy="5" r="3" stroke="#C9A84C" stroke-width="1.2"/>
+            <path d="M2 15 C2 11 4 9 8 9 C12 9 14 11 14 15" stroke="#C9A84C" stroke-width="1.2"/>
+          </svg>
+          <text x="22" y="14" font-family="Inter,sans-serif" font-size="5.5" fill="#8892A4" letter-spacing="0.5">LEAD</text>
+          <text x="22" y="25" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#C9A84C">247</text>
+        </g>
+        <!-- Card 2: Revenue -->
+        <g class="data-card-g" transform="translate(8,148)" style="animation-delay:0.3s">
+          <rect width="48" height="32" rx="3" fill="rgba(11,37,69,0.92)" stroke="#C9A84C" stroke-width="1"/>
+          <text x="8" y="23" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="#C9A84C">$</text>
+          <text x="22" y="14" font-family="Inter,sans-serif" font-size="5.5" fill="#8892A4" letter-spacing="0.5">REV</text>
+          <text x="22" y="25" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#C9A84C">12.4k</text>
+        </g>
+        <!-- Card 3: Active -->
+        <g class="data-card-g" transform="translate(20,215)" style="animation-delay:0.6s">
+          <rect width="48" height="32" rx="3" fill="rgba(11,37,69,0.92)" stroke="#C9A84C" stroke-width="1"/>
+          <svg x="4" y="9" width="14" height="14" viewBox="0 0 16 16" fill="none">
+            <polyline points="1,8 4,8 6,3 8,13 10,5 12,8 15,8" stroke="#C9A84C" stroke-width="1.2" fill="none"/>
+          </svg>
+          <text x="22" y="14" font-family="Inter,sans-serif" font-size="5.5" fill="#8892A4" letter-spacing="0.5">LIVE</text>
+          <text x="22" y="25" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#3B82F6">ACTIVE</text>
+        </g>
+        <!-- Card 4: Growth -->
+        <g class="data-card-g" transform="translate(6,278)" style="animation-delay:0.9s">
+          <rect width="48" height="32" rx="3" fill="rgba(11,37,69,0.92)" stroke="#C9A84C" stroke-width="1"/>
+          <svg x="4" y="9" width="14" height="14" viewBox="0 0 16 16" fill="none">
+            <rect x="2" y="9" width="3" height="6" fill="#C9A84C"/>
+            <rect x="7" y="5" width="3" height="10" fill="#C9A84C"/>
+            <rect x="12" y="2" width="3" height="13" fill="#C9A84C"/>
+          </svg>
+          <text x="22" y="14" font-family="Inter,sans-serif" font-size="5.5" fill="#8892A4" letter-spacing="0.5">GROWTH</text>
+          <text x="22" y="25" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#C9A84C">+94%</text>
+        </g>
+
+      </svg>
+    </div><!-- /hero-col-figure -->
+
+    <!-- ── Right column: headline + CTAs ── -->
+    <div class="hero-col-text">
+      <p class="hero-eyebrow">AI Agent Deployment</p>
+      <h1 class="hero-headline">
+        <span class="hero-line">Every Lead.</span>
+        <span class="hero-line">Every Industry.</span>
+        <span class="hero-line hero-line-gold">Zero Slip Through.</span>
+      </h1>
+      <p class="hero-sub">
+        Argus builds and deploys AI agents that capture, qualify, and hand off prospects automatically, configured entirely to your business, your market, and your rules. Any industry. Any language. No limits.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-gold">Deploy Your Agents</a>
+        <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+      </div>
+      <div class="hero-trust">
+        <span>Deployed &amp; Active</span>
+        <span class="trust-sep" aria-hidden="true">|</span>
+        <span>Any Industry</span>
+        <span class="trust-sep" aria-hidden="true">|</span>
+        <span>Any Language</span>
+        <span class="trust-sep" aria-hidden="true">|</span>
+        <span>Fully Custom</span>
+      </div>
+    </div><!-- /hero-col-text -->
+
+  </div><!-- /hero-columns -->
   <a href="#problem" class="hero-scroll" aria-label="Scroll down">
     <svg class="scroll-chevron" width="28" height="28" viewBox="0 0 28 28" fill="none">
       <path d="M7 10.5l7 7 7-7" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
