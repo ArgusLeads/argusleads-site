@@ -14,6 +14,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .agent-more-link {
+      display: inline-block;
+      margin-top: 1.25rem;
+      color: var(--gold, #C9A84C);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: opacity 0.2s;
+    }
+    .agent-more-link:hover { opacity: 0.75; }
+  </style>
 </head>
 <body>
 
@@ -206,21 +220,8 @@
         <div class="agent-role">Lead Qualification</div>
         <p class="agent-note">Named and branded for your business</p>
         <div class="agent-divider"></div>
-        <p class="agent-desc">Your frontline agent. The moment a prospect makes contact, Agent 01 engages, asking the questions that matter for your specific business, filtering out time wasters, and delivering only qualified leads ready to act directly to your team. Runs every hour of every day.</p>
-        <ul class="agent-caps">
-          <li>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Instant response to every inbound inquiry
-          </li>
-          <li>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Qualification criteria built around your business
-          </li>
-          <li>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Seamless handoff to your team or Agent 02
-          </li>
-        </ul>
+        <p class="agent-desc">The moment a prospect makes contact, Agent 01 engages, asking the right questions, filtering out time wasters, and delivering only qualified leads ready to act directly to your team.</p>
+        <a href="agents.html" class="agent-more-link">See full capabilities →</a>
       </div>
 
       <div class="agent-card fade-up">
@@ -228,21 +229,8 @@
         <div class="agent-role">Operations &amp; Coordination</div>
         <p class="agent-note">Named and branded for your business</p>
         <div class="agent-divider"></div>
-        <p class="agent-desc">Your pipeline layer. Agent 02 tracks every active prospect, manages milestone timelines, sends proactive alerts, and delivers scheduled briefings so your team always knows exactly where every deal stands. Nothing falls through.</p>
-        <ul class="agent-caps">
-          <li>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Automated milestone and deadline tracking
-          </li>
-          <li>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Scheduled briefings and real time alerts
-          </li>
-          <li>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Fully configurable to your exact pipeline
-          </li>
-        </ul>
+        <p class="agent-desc">Once a lead is qualified, Agent 02 takes ownership, managing milestones, triggering follow ups at the right moments, and delivering scheduled briefings so your team always knows exactly where every deal stands.</p>
+        <a href="agents.html" class="agent-more-link">See full capabilities →</a>
       </div>
 
       <div class="agent-card fade-up">
@@ -250,21 +238,8 @@
         <div class="agent-role">Market Intelligence</div>
         <p class="agent-note">Named and branded for your business</p>
         <div class="agent-divider"></div>
-        <p class="agent-desc">Your presence engine. Agent 03 generates and distributes intelligent reports to your sphere of influence on your schedule, keeping your brand visible, your clients informed, and your pipeline warm without a single manual send.</p>
-        <ul class="agent-caps">
-          <li>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Automated market and industry intelligence
-          </li>
-          <li>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Scheduled outreach to your full sphere
-          </li>
-          <li>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Content and cadence configured to your market
-          </li>
-        </ul>
+        <p class="agent-desc">Agent 03 generates and distributes intelligent reports to your sphere of influence on your schedule, keeping your brand visible, your clients informed, and your pipeline warm without a single manual send.</p>
+        <a href="agents.html" class="agent-more-link">See full capabilities →</a>
       </div>
 
     </div>
@@ -553,7 +528,7 @@
           </li>
         </ul>
         <p class="pricing-fine">Plus a performance fee on closed deals sourced by your agents. No deal, no fee.</p>
-        <a href="#contact" class="btn btn-gold pricing-btn">Start Saving</a>
+        <a href="#contact" class="btn btn-gold pricing-btn">Get Started</a>
       </div>
 
       <div class="pricing-card pricing-card-custom fade-up">
